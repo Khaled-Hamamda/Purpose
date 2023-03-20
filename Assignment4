@@ -1,0 +1,10 @@
+# Imports go at the top
+from microbit import *
+
+while True:
+    motion = pin2.read_digital()
+    if motion == 0:
+        pin5.write_digital(0)
+    else:
+        pin5.write_digital(1)
+        
